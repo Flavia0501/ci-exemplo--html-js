@@ -1,0 +1,30 @@
+name: CI
+
+on:
+push:
+  branches: [ main ]
+"main".
+pull_request:
+  branches: [ main ] 
+direcionado à branch "main".
+
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+
+steps:
+  - uses: actions/checkout@v3 
+
+- name: Executar testes
+run: |
+  echo "Nenhum teste implementado ainda. Adicione testes em script.js!"
+  echo "Podemos adicionar testes com Jest ou Cypress no futuro."
+  echo "Testes simulados aprovados"
+
+exit 0 
+
+- name: Deploy para GitHub Pages
+  if: github.ref == 'refs/heads/main' 
+  uses: actions/deploy-pages@v2
+  with:
+    folder: . 
