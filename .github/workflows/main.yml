@@ -3,10 +3,9 @@ name: CI
 on:
 push:
   branches: [ main ]
-"main".
+  
 pull_request:
   branches: [ main ] 
-direcionado à branch "main".
 
 jobs:
   build:
