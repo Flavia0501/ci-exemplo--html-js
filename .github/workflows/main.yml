@@ -30,8 +30,7 @@ jobs:
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          folder:.    
+   
 
       - name: Deploy para GitHub Pages
         if: github.ref == 'refs/heads/main'
